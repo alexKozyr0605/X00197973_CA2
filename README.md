@@ -6,7 +6,7 @@ Technologies used include Java, Azure etc
 
 I dont know what local development setup entails
 
-Features of the application include the ability to convert euro to yen and the ability to convert yen to euro and users the ability to input the amount they want for each conversion
+Features of the application include the ability to convert euro to yen and the ability to convert yen to euro
 
 Don't ask about CI Pipeline implementation please
 
