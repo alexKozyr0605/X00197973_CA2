@@ -36,3 +36,5 @@ steps:
 #     jdkVersionOption: '17'
 #     jdkArchitectureOption: 'x64'
 #     tasks: 'showProjectInfo'
+
+- script: chmod +x gradlew
