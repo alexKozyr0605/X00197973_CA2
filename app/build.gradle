@@ -49,15 +49,15 @@ application {
     mainClass = 'org.example.App'
 }
 
-// jacocoTestCoverageVerification {
-//     violationRules {
-//         rule {
-//             limit {
-//                 minimum = 0.8
-//             }
-//         }
-//     }
-// }
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.8
+            }
+        }
+    }
+}
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
@@ -90,4 +90,12 @@ tasks.named('jacocoTestCoverageVerification') {
 
 tasks.named('check') {
     jacocoTestCoverageVerification.mustRunAfter jacocoTestReport
+}
+
+task showProjectInfo {
+    doLast {
+        println "Project Name: $project.name"
+        println "Java Version: ${java.toolchain.languageVersion.get()}"
+        println "Main Class: ${application.mainClass.get()}"
+    }
 }
