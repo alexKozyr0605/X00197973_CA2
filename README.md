@@ -19,7 +19,7 @@ The CI Pipeline for this project runs on Microsoft Azure and is implemented via 
 I have a separate branch for main and development. I experiment with code using the development branch and if they pass the unit test I push them to the main.
 
 ## Testing Strategy
-I have no testing strategy
+My testing strategy was rather simplistic. I used a assertNotNull's for each method. Then for the test report I used Jacoco test report.
 
 ## Troubleshooting Guide
 Dont know what troubleshooting guide is
