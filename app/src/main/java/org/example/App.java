@@ -7,7 +7,7 @@ package org.example;
 public class App {
     public Double yenConverter() {
         double exchangeRate1 = 177.31;
-        double euro = 12;
+        double euro = 13;
         double yen = euro*exchangeRate1;
         return yen;
     }

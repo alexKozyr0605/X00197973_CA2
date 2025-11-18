@@ -44,9 +44,20 @@ application {
     mainClass = 'org.example.App'
 }
 
+// jacocoTestCoverageVerification {
+//     violationRules {
+//         rule {
+//             limit {
+//                 minimum = 0.8
+//             }
+//         }
+//     }
+// }
+
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+    // finalizedBy jacocoTestReport
     systemProperty "cucumber.junit-platform.naming-strategy", "long"
     testLogging {
         events "passed", "skipped", "failed"
